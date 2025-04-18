@@ -96,7 +96,7 @@ RUN mkdir -p /etc/apache2/ssl
 RUN a2enmod ssl && a2enmod rewrite
 
 # Enable apache modules
-RUN a2enmod rewrite headers
+RUN a2enmod rewrite headers expires
 
 # Cleanup
 RUN rm -rf /usr/src/*
